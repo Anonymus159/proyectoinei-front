@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:3000/api/censistas";
+// const API_URL = "http://localhost:3000/api/censistas";
+const API_URL =
+  (import.meta.env.VITE_API_URL || "http://localhost:3000/api") +
+  "/censistas";
+
+//console.log("API_URL RESUELTA =>", API_URL);
+
+
 
 // Tipos para el JSON
 interface Usuario {
