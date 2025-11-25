@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Fondo y tipografía base */
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Muy importante: nada de display:flex aquí */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Aseguramos que el root ocupe todo el ancho */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Opcional: quitar estilos globales de button/a del template de Vite
+   porque ya estás manejando todo con Tailwind */
+a {
+  color: inherit;
+  text-decoration: none;
+}
